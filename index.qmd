@@ -1,0 +1,91 @@
+---
+title: "Travel Behavior and Forecasting"
+format: 
+  html:
+    theme: minty
+    toc: true
+    toc-location: left
+execute: 
+  echo: false
+editor: visual
+---
+
+```{r, message=FALSE}
+library(here)
+```
+
+## Course Overview
+
+Modeling travel behavior is useful for two reasons:
+
+1.  Because we need to know the likely consequences of specific planning actions
+2.  Because we want to understand some fundamental relationships between context and travel behavior (which can inform general expectations about the likely results of various types of planning actions).
+
+Regional travel demand models are sequences of quantitative models that each predict a specific travel behavior choice. In this class, we will be using the Boston Region Metropolitan Planning Organization Planning Model (TDM23) as an example of a regional travel demand model. Here is an illustration of that model's structure:
+
+```{r, out.width="100%"}
+
+here("images",
+     "boston-model.png") |>
+  knitr::include_graphics()
+```
+
+I would describe this as a classic four-step model, the four steps being:
+
+-   Trip generation (how many trips will each zone produce?)
+
+-   Trip distribution (what share of the trips produced by each zone will be attracted to each of the other zones?)
+
+-   Mode choice (what share of trips between each origin/destination pair will take place on each possible mode?)
+
+-   Trip Assignment (which routes will be used for trips by each mode from each origin to each destination?)
+
+Each of these represents a behavioral choice made by travelers. The Boston model includes some additional choices as well:
+
+-   Vehicle availability (how many vehicles will each household choose to have?)
+
+-   Work from home (what share of workers will choose to work from home on a typical day?)
+
+Other steps shown in the model are for processing data and don't directly represent travelers' decision-making.
+
+The inputs to this series of models are:
+
+-   Characteristics of households in each model zone.
+
+-   Characteristics of jobs in each model zone.
+
+-   Characteristics of the transportation network(s).
+
+The primary output would be a prediction for the number of travelers and/or vehicles on each link of each transportation network. Each step of the model generates output that may be interesting for its own sake and also serves as inputs to subsequent model steps.
+
+A model like this can be useful for informing our sense of how particular changes in a region's transportation infrastructure, population, and/or employment might be reasonably expected to lead to differences in (for example):
+
+-   Traffic volumes (and likely congestion) on particular roads
+
+-   Total vehicle miles traveled (and from there, greenhouse gas emissions)
+
+-   Transit ridership (on an entire system, or on particular routes and at particular stops)
+
+## Vehicle Availability
+
+A vehicle availability model represents a long-term choice that households make about how many vehicles to own (or to avail themselves of by means other than ownership). Some models could use this choice as a model input (in the same way that the choice of where to live is a model input). However, some transportation planning actions might influence travel behavior by inducing households to acquire or dispose of a vehicle, so in can be useful to have this choice inside the model (endogenous) rather than outside the model.
+
+You will estimate your own vehicle availability model using data from the National Household Travel Survey, following \[this example\](<https://gsd-ses-5394-sp2025.github.io/examples/P1/P1.html>).
+
+You will also apply the vehicle availability model from the Boston Region model to predict a plausible vehicle availability outcome that would result from a change in population, employment, or the transportation network.
+
+## Trip generation
+
+A trip generation model predicts how many trips a household or individual will make, or how many trips a zone will produce.
+
+You will estimate your own trip generation model using data from the National Household Travel Survey.
+
+You will also apply the trip generation models from the Boston Region model to predict a plausible trip generation outcome that would result from a change in population, employment, or the transportation network.
+
+## Trip distribution
+
+A trip distribution model predicts what share of trips from a model zone will go to each of the other zones.
+
+You will estimate your own trip distribution model for commuting trips using data from the United States Census Bureau's Longitudinal Employer-Household Dynamics Origin-Destination Employment Statistics (LODES).
+
+You will also apply the trip distribution models from the Boston Region model to predict a plausible trip distribution outcome that would result from a change in population, employment, or the transportation network.
