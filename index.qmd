@@ -66,6 +66,8 @@ A model like this can be useful for informing our sense of how particular change
 
 -   Transit ridership (on an entire system, or on particular routes and at particular stops)
 
+You'll spend this semester learning about travel behavior and modeling by estimating a few simple models of your own and applying the Boston Region travel demand model to make some specific predictions.
+
 ## Vehicle Availability
 
 A vehicle availability model represents a long-term choice that households make about how many vehicles to own (or to avail themselves of by means other than ownership). Some models could use this choice as a model input (in the same way that the choice of where to live is a model input). However, some transportation planning actions might influence travel behavior by inducing households to acquire or dispose of a vehicle, so in can be useful to have this choice inside the model (endogenous) rather than outside the model.
