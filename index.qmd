@@ -70,17 +70,17 @@ You'll spend this semester learning about travel behavior and modeling by estima
 
 ## Vehicle Availability
 
-A vehicle availability model represents a long-term choice that households make about how many vehicles to own (or to avail themselves of by means other than ownership). Some models could use this choice as a model input (in the same way that the choice of where to live is a model input). However, some transportation planning actions might influence travel behavior by inducing households to acquire or dispose of a vehicle, so in can be useful to have this choice inside the model (endogenous) rather than outside the model.
+A vehicle availability model represents a long-term choice that households make about how many vehicles to own (or to avail themselves of by means other than ownership). Some models could use this choice as a model input (in the same way that the choice of where to live is a model input). However, some transportation planning actions might influence travel behavior by inducing households to acquire or dispose of a vehicle, so in can be useful to have this choice inside the model (endogenous) rather than outside the model (exogenous).
 
 You will estimate your own vehicle availability model using data from the National Household Travel Survey, following [this example.](https://gsd-ses-5394-sp2025.github.io/examples/P2/P2.html)
 
-You will also apply the vehicle availability model from the Boston Region model to predict a plausible vehicle availability outcome that would result from a change in population, employment, or the transportation network.
+You will also apply the vehicle availability model from the Boston Region model to predict a plausible vehicle availability outcome that would result from a change in population, employment, or the transportation network, following [this example](https://gsd-ses-5394-sp2025.github.io/examples/T1/T1).
 
 ## Trip generation
 
 A trip generation model predicts how many trips a household or individual will make, or how many trips a zone will produce.
 
-You will estimate your own trip generation model using data from the National Household Travel Survey.
+You will estimate your own trip generation model using data from the National Household Travel Survey, following [this example](https://gsd-ses-5394-sp2025.github.io/examples/P3/P3).
 
 You will also apply the trip generation models from the Boston Region model to predict a plausible trip generation outcome that would result from a change in population, employment, or the transportation network.
 
