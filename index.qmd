@@ -82,7 +82,7 @@ A trip generation model predicts how many trips a household or individual will m
 
 You will estimate your own trip generation model using data from the National Household Travel Survey, following [this example](https://gsd-ses-5394-sp2025.github.io/examples/P3/P3).
 
-You will also apply the trip generation models from the Boston Region model to predict a plausible trip generation outcome that would result from a change in population, employment, or the transportation network.
+You will also apply the trip generation models from the Boston Region model to predict a plausible trip generation outcome that would result from a change in population, employment, or the transportation network, following [this example](https://gsd-ses-5394-sp2025.github.io/examples/T2/T2).
 
 ## Trip distribution
 
