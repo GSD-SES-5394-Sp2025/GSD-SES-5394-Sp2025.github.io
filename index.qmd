@@ -88,6 +88,6 @@ You will also apply the trip generation models from the Boston Region model to p
 
 A trip distribution model predicts what share of trips from a model zone will go to each of the other zones.
 
-You will estimate your own trip distribution model for commuting trips using data from the United States Census Bureau's Longitudinal Employer-Household Dynamics Origin-Destination Employment Statistics (LODES).
+You will estimate your own trip distribution model for commuting trips using data from the United States Census Bureau's Longitudinal Employer-Household Dynamics Origin-Destination Employment Statistics (LODES), following [this example](https://gsd-ses-5394-sp2025.github.io/examples/P4/P4.html).
 
 You will also apply the trip distribution models from the Boston Region model to predict a plausible trip distribution outcome that would result from a change in population, employment, or the transportation network.
